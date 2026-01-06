@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn languages online with expert tuition. Interactive quizzes and practice exercises.">
+  <title>Language Tutor - Learn English, Chinese, Hindi & More</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo">LangTutor</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#languages" class="nav-link">Languages</a></li>
+          <li><a href="#practice" class="nav-link">Practice</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Master a New Language</h1>
+        <p class="hero-subtitle">Learn from an experienced tutor. Practice with interactive quizzes. Achieve fluency.</p>
+        <a href="#practice" class="btn btn-primary">Start Learning Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section class="languages" id="languages">
+    <div class="container">
+      <h2>Languages Offered</h2>
+      <p class="section-subtitle">We teach 9+ languages to students of all levels</p>
+      
+      <div class="languages-grid">
+        <div class="language-card">
+          <div class="language-emoji">🇬🇧</div>
+          <h3>English</h3>
+          <p>Conversation, grammar, and business English</p>
+        </div>
+        <div class="language-card">
+          <div class="language-emoji">🇨🇳</div>
+          <h3>Mandarin Chinese</h3>
+          <p>Pinyin, characters, and spoken fluency</p>
+        </div>
+        <div class="language-card">
+          <div class="language-emoji">🇭🇰</div>
+          <h3>Cantonese</h3>
+          <p>Native pronunciation and colloquial usage</p>
+        </div>
+        <div class="language-card">
+          <div class="language-emoji">🇮🇳</div>
+          <h3>Hindi</h3>
+          <p>Script, vocabulary, and conversational skills</p>
+        </div>
+        <div class="language-card">
+          <div class="language-emoji">📚</div>
+          <h3>Sanskrit & More</h3>
+          <p>Tamil, Telugu, Urdu and additional languages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice & Quiz Section -->
+  <section class="practice" id="practice">
+    <div class="container">
+      <h2>Practice & Quiz</h2>
+      <p class="section-subtitle">Test your knowledge and improve your skills</p>
+      
+      <div class="tabs">
+        <a class="tab-btn" href="quiz-select.html">Quizzes</a>
+        <a class="tab-btn" href="exercise-select.html">Exercises</a>
+      </div>
+      <!-- // create a simple quiz scoring system with local storage -->
+      <div class="tab-contents">
+            <!-- Quizzes Tab -->
+      <div id="quizzes" class="tab-content active">
+        <div class="quiz-grid">
+          <div class="card">
+            <h3>English Quiz</h3>
+            <p class="question">What is the plural of "child"?</p>
+            <div class="options">
+              <button class="option-btn" onclick="checkAnswer(1,'wrong')">Childs</button>
+              <button class="option-btn" onclick="checkAnswer(1,'right')">Children</button>
+            </div>
+            <p id="result1" class="feedback"></p>
+          </div>
+
+          <div class="card">
+            <h3>Hindi Quiz</h3>
+            <p class="question">What is the Hindi word for "Water"?</p>
+            <div class="options">
+              <button class="option-btn" onclick="checkAnswer(2,'right')">Paani</button>
+              <button class="option-btn" onclick="checkAnswer(2,'wrong')">Agni</button>
+            </div>
+            <p id="result2" class="feedback"></p>
+          </div>
+
+          <!-- Malayalam quiz removed per user request -->
+        </div>
+      </div>
+
+      <!-- Exercises moved to exercises.html -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Ready to Learn?</h2>
+        <p>Message me to discuss your goals and schedule your first lesson.</p>
+        <a href="https://wa.me/?text=Hi%20I%20want%20to%20learn%20languages" class="btn btn-primary" target="_blank">Start on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Language Tutor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="quizzes.js"></script>
+</body>
+</html>
