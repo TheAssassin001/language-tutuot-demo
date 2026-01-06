@@ -81,36 +81,6 @@
         <a class="tab-btn" href="quiz-select.html">Quizzes</a>
         <a class="tab-btn" href="exercise-select.html">Exercises</a>
       </div>
-      <!-- // create a simple quiz scoring system with local storage -->
-      <div class="tab-contents">
-            <!-- Quizzes Tab -->
-      <div id="quizzes" class="tab-content active">
-        <div class="quiz-grid">
-          <div class="card">
-            <h3>English Quiz</h3>
-            <p class="question">What is the plural of "child"?</p>
-            <div class="options">
-              <button class="option-btn" onclick="checkAnswer(1,'wrong')">Childs</button>
-              <button class="option-btn" onclick="checkAnswer(1,'right')">Children</button>
-            </div>
-            <p id="result1" class="feedback"></p>
-          </div>
-
-          <div class="card">
-            <h3>Hindi Quiz</h3>
-            <p class="question">What is the Hindi word for "Water"?</p>
-            <div class="options">
-              <button class="option-btn" onclick="checkAnswer(2,'right')">Paani</button>
-              <button class="option-btn" onclick="checkAnswer(2,'wrong')">Agni</button>
-            </div>
-            <p id="result2" class="feedback"></p>
-          </div>
-
-          <!-- Malayalam quiz removed per user request -->
-        </div>
-      </div>
-
-      <!-- Exercises moved to exercises.html -->
     </div>
   </section>
 
@@ -132,6 +102,5 @@
     </div>
   </footer>
 
-  <script src="quizzes.js"></script>
 </body>
 </html>
